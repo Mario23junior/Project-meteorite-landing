@@ -8,6 +8,7 @@ import { NavComponent } from './components/nav/nav.component';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
+import { MatListModule } from '@angular/material/list';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { MatButtonModule } from '@angular/material/button';
     AppRoutingModule,
     MatButtonModule,
     BrowserAnimationsModule,
-    MatSidenavModule
+    MatSidenavModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
