@@ -9,8 +9,9 @@ import { NavComponent } from './components/nav/nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatListModule } from '@angular/material/list';
-import {MatIconModule} from '@angular/material/icon';
+import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './components/home/home.component';
+import { MatCardModule } from '@angular/material/card';
 
 
 @NgModule({
@@ -26,7 +27,9 @@ import { HomeComponent } from './components/home/home.component';
     BrowserAnimationsModule,
     MatSidenavModule,
     MatListModule,
-    MatIconModule
+    MatIconModule,
+    MatCardModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]
