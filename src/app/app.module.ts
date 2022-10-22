@@ -13,6 +13,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './components/home/home.component';
 import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './components/header/header.component';
+import { MeteoriteComponent } from './components/meteorite/meteorite.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { HeaderComponent } from './components/header/header.component';
     AppComponent,
     NavComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    MeteoriteComponent
   ],
   imports: [
     BrowserModule,
