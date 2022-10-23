@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { Observable } from 'rxjs';
+import { Observable, tap } from 'rxjs';
 import { Meteorite } from '../components/model/Meteorite.model';
 
 @Injectable({
@@ -15,7 +15,10 @@ export class MeteoriteServiceService {
 
   listAll(): Observable<Meteorite[]> {
     let url = this.baseUrl+this.uri
-    let request = this.httpClient.get<Meteorite[]>(url);
+    let request = this.httpClient.get<Meteorite[]>(url)
+    .pipe(
+      tap(t => console.log(t))
+    )
     return request
   }
 }

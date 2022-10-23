@@ -15,6 +15,7 @@ import { MatCardModule } from '@angular/material/card';
 import { HeaderComponent } from './components/header/header.component';
 import { MeteoriteComponent } from './components/meteorite/meteorite.component';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -34,7 +35,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatListModule,
     MatIconModule,
     MatCardModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule
 
   ],
   providers: [],
