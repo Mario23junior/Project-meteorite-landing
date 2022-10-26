@@ -1,0 +1,31 @@
+<mat-drawer-container class="container" autosize>
+    <mat-drawer #drawer class="sidenav" mode="side">
+        <mat-nav-list class="nav-lis">
+            
+            <a mat-list-item routerLink="/home">
+                <i class="material-icons">home</i>
+                Home
+            </a>
+
+            <a mat-list-item routerLink="/meteorite">
+                <i class="material-icons">blur_circular</i>
+                Meteoritos
+            </a>
+
+            <a mat-list-item target="_blank" href="https://github.com/Mario23junior/Project-meteorite-landing/tree/dev">
+                <i class="material-icons">code</i>
+                github
+            </a>
+
+        </mat-nav-list>
+    </mat-drawer>
+
+    <div class="sidenav-content">
+        <app-header></app-header>
+        <button type="button" class="menu mat-elevation-z6" mat-icon-button (click)="drawer.toggle()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <router-outlet></router-outlet>
+    </div>
+
+</mat-drawer-container>
